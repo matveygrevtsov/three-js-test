@@ -36,6 +36,7 @@
     "webpack-dev-server": "5.1.0"
   },
   "dependencies": {
+    "cannon-es": "0.20.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-router-dom": "7.1.0",
