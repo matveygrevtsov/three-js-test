@@ -1,0 +1,45 @@
+{
+  "homepage": "https://matveygrevtsov.github.io/three-js-test/",
+  "name": "three-js-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "cross-env BASE_URL=/ npx webpack --mode production",
+    "start": "npx webpack server",
+    "lint": "npx eslint ./src --fix",
+    "predeploy": "cross-env BASE_URL=https://matveygrevtsov.github.io/three-js-test/ npx webpack --mode production",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "9.16.0",
+    "@types/react": "19.0.1",
+    "@types/react-dom": "19.0.1",
+    "@types/three": "0.171.0",
+    "copy-webpack-plugin": "12.0.2",
+    "cross-env": "7.0.3",
+    "eslint": "9.16.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-prettier": "5.2.1",
+    "eslint-plugin-react": "7.37.2",
+    "gh-pages": "6.2.0",
+    "globals": "15.13.0",
+    "html-webpack-plugin": "5.6.3",
+    "prettier": "3.4.2",
+    "ts-loader": "9.5.1",
+    "typescript": "5.7.2",
+    "typescript-eslint": "8.17.0",
+    "webpack": "5.97.1",
+    "webpack-cli": "5.1.4",
+    "webpack-dev-server": "5.1.0"
+  },
+  "dependencies": {
+    "react": "19.0.0",
+    "react-dom": "19.0.0",
+    "react-router-dom": "7.1.0",
+    "styled-components": "6.1.13",
+    "three": "0.171.0"
+  }
+}
